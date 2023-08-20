@@ -14,7 +14,7 @@ const Square = ({id, newState, winner}) => {
 
   return (
     <button
-      disabled={winner ? true : false }
+      disabled={winner !== null ? true : false }
       onClick={e => {
         //let col = getRandomColor();
         let nextPlayer = newState(id);
